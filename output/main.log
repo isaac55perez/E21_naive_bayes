@@ -1,0 +1,111 @@
+2025-11-29 02:47:02 - main - INFO - ================================================================================
+2025-11-29 02:47:02 - main - INFO - IRIS CLASSIFICATION - NAIVE BAYES COMPARISON
+2025-11-29 02:47:02 - main - INFO - NumPy (Histogram-based) vs Scikit-learn (CategoricalNB)
+2025-11-29 02:47:02 - main - INFO - ================================================================================
+2025-11-29 02:47:02 - main - INFO - 
+Configuration:
+2025-11-29 02:47:02 - main - INFO -   Train/Test Split: 75% / 25%
+2025-11-29 02:47:02 - main - INFO -   Random Seed: 42
+2025-11-29 02:47:02 - main - INFO -   Number of Bins: 10
+2025-11-29 02:47:02 - main - INFO -   Laplace Smoothing (alpha): 1.0
+2025-11-29 02:47:02 - main - INFO - 
+================================================================================
+2025-11-29 02:47:02 - main - INFO - STEP 1: LOADING DATA
+2025-11-29 02:47:02 - main - INFO - ================================================================================
+2025-11-29 02:47:02 - main - INFO - Dataset loaded: 150 samples, 4 features, 3 classes
+2025-11-29 02:47:02 - main - INFO - 
+================================================================================
+2025-11-29 02:47:02 - main - INFO - STEP 2: SPLITTING DATA
+2025-11-29 02:47:02 - main - INFO - ================================================================================
+2025-11-29 02:47:02 - main - INFO - Training set: 112 samples
+2025-11-29 02:47:02 - main - INFO - Test set: 38 samples
+2025-11-29 02:47:02 - main - INFO - 
+================================================================================
+2025-11-29 02:47:02 - main - INFO - STEP 3: DISCRETIZING FEATURES
+2025-11-29 02:47:02 - main - INFO - ================================================================================
+2025-11-29 02:47:02 - main - INFO - Features discretized into 10 bins
+2025-11-29 02:47:02 - main - INFO - 
+================================================================================
+2025-11-29 02:47:02 - main - INFO - STEP 4: NUMPY IMPLEMENTATION
+2025-11-29 02:47:02 - main - INFO - ================================================================================
+2025-11-29 02:47:02 - main - INFO - 
+--- Training NumPy Classifier ---
+2025-11-29 02:47:02 - main - INFO - 
+--- Evaluating on Training Set ---
+2025-11-29 02:47:02 - main - INFO - NumPy Training Accuracy: 97.32%
+2025-11-29 02:47:02 - main - INFO - 
+--- Evaluating on Test Set ---
+2025-11-29 02:47:02 - main - INFO - NumPy Test Accuracy: 94.74%
+2025-11-29 02:47:02 - main - INFO - 
+--- Generating Histograms ---
+2025-11-29 02:47:02 - main - INFO - 
+================================================================================
+2025-11-29 02:47:02 - main - INFO - STEP 5: SCIKIT-LEARN IMPLEMENTATION
+2025-11-29 02:47:02 - main - INFO - ================================================================================
+2025-11-29 02:47:02 - main - INFO - 
+--- Training Sklearn Classifier ---
+2025-11-29 02:47:02 - main - INFO - 
+--- Evaluating on Training Set ---
+2025-11-29 02:47:02 - main - INFO - Sklearn Training Accuracy: 97.32%
+2025-11-29 02:47:02 - main - INFO - 
+--- Evaluating on Test Set ---
+2025-11-29 02:47:02 - main - INFO - Sklearn Test Accuracy: 94.74%
+2025-11-29 02:47:02 - main - INFO - 
+--- Generating Histograms ---
+2025-11-29 02:47:03 - main - INFO - 
+================================================================================
+2025-11-29 02:47:03 - main - INFO - STEP 6: COMPARISON AND VERIFICATION
+2025-11-29 02:47:03 - main - INFO - ================================================================================
+2025-11-29 02:47:03 - main - INFO - 
+--- Accuracy Comparison ---
+2025-11-29 02:47:03 - main - INFO - Training Set:
+2025-11-29 02:47:03 - main - INFO -   NumPy:   97.32%
+2025-11-29 02:47:03 - main - INFO -   Sklearn: 97.32%
+2025-11-29 02:47:03 - main - INFO -   Difference: 0.00%
+2025-11-29 02:47:03 - main - INFO - 
+Test Set:
+2025-11-29 02:47:03 - main - INFO -   NumPy:   94.74%
+2025-11-29 02:47:03 - main - INFO -   Sklearn: 94.74%
+2025-11-29 02:47:03 - main - INFO -   Difference: 0.00%
+2025-11-29 02:47:03 - main - INFO - 
+--- Prediction Comparison (Training Set) ---
+2025-11-29 02:47:03 - main - INFO - 
+--- Prediction Comparison (Test Set) ---
+2025-11-29 02:47:03 - main - INFO - 
+================================================================================
+2025-11-29 02:47:03 - main - INFO - STEP 7: PER-CLASS ANALYSIS
+2025-11-29 02:47:03 - main - INFO - ================================================================================
+2025-11-29 02:47:03 - main - INFO - 
+--- NumPy Test Set Performance ---
+2025-11-29 02:47:03 - main - INFO - 
+--- Sklearn Test Set Performance ---
+2025-11-29 02:47:03 - main - INFO - 
+================================================================================
+2025-11-29 02:47:03 - main - INFO - FINAL SUMMARY
+2025-11-29 02:47:03 - main - INFO - ================================================================================
+2025-11-29 02:47:03 - main - INFO - 
+Results:
+2025-11-29 02:47:03 - main - INFO -   1. Both implementations trained successfully
+2025-11-29 02:47:03 - main - INFO -   2. NumPy test accuracy: 94.74%
+2025-11-29 02:47:03 - main - INFO -   3. Sklearn test accuracy: 94.74%
+2025-11-29 02:47:03 - main - INFO -   4. Prediction agreement on test set: 100.00%
+2025-11-29 02:47:03 - main - INFO - 
+Compatibility Verification:
+2025-11-29 02:47:03 - main - INFO -   ✓ Accuracy difference < 5% (0.00%)
+2025-11-29 02:47:03 - main - INFO -   ✓ Prediction agreement > 90% (100.00%)
+2025-11-29 02:47:03 - main - INFO -   ✓ Both implementations achieve > 60% test accuracy
+2025-11-29 02:47:03 - main - INFO - 
+Log files saved to output/:
+2025-11-29 02:47:03 - main - INFO -   - naive_bayes_numpy.log
+2025-11-29 02:47:03 - main - INFO -   - naive_bayes_sklearn.log
+2025-11-29 02:47:03 - main - INFO -   - main.log
+2025-11-29 02:47:03 - main - INFO - 
+Visualization files saved to output/:
+2025-11-29 02:47:03 - main - INFO -   - numpy_feature_histograms.png
+2025-11-29 02:47:03 - main - INFO -   - numpy_class_priors.png
+2025-11-29 02:47:03 - main - INFO -   - sklearn_feature_histograms.png
+2025-11-29 02:47:03 - main - INFO -   - sklearn_class_priors.png
+2025-11-29 02:47:03 - main - INFO - 
+================================================================================
+2025-11-29 02:47:03 - main - INFO - EXECUTION COMPLETE
+2025-11-29 02:47:03 - main - INFO - ================================================================================

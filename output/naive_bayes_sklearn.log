@@ -1,0 +1,172 @@
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Initialized NaiveBayesSklearn with alpha=1.0
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - TRAINING SKLEARN NAIVE BAYES CLASSIFIER
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Training samples: 112
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Features: 4
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Classes: [0 1 2]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Number of classes: 3
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+--- Class Distribution ---
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Class 0: 42 samples (prior: 0.3750)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Class 1: 35 samples (prior: 0.3125)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Class 2: 35 samples (prior: 0.3125)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+--- Feature Statistics ---
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Feature 0: 10 unique values (range: 0-9)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Feature 1: 10 unique values (range: 0-9)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Feature 2: 9 unique values (range: 0-9)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Feature 3: 10 unique values (range: 0-9)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+--- Training CategoricalNB ---
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+--- Learned Parameters ---
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Class log priors shape: (3,)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Feature log probabilities: list of 4 arrays
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   Each array shape: (3, 10)
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - P(class=0) = 0.3750
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - P(class=1) = 0.3125
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - P(class=2) = 0.3125
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+--- Sample Feature Probabilities (Class 0, Feature 0) ---
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   P(feature_0=0|class=0) = 0.1731
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   P(feature_0=1|class=0) = 0.3462
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   P(feature_0=2|class=0) = 0.1923
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   P(feature_0=3|class=0) = 0.1731
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   P(feature_0=4|class=0) = 0.0192
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+--- Training Complete ---
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - PREDICTION PHASE
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Predicting 112 samples
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+--- Sample Predictions ---
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 0: [5 3 6 4]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -8.6300
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -0.2013
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -1.7031
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 1
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 1: [3 7 1 0]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -0.0011
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -7.2235
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -7.9967
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 0
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 2: [9 2 9 9]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -8.9231
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -6.3299
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -0.0019
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 2
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 3: [4 3 5 5]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -9.9768
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -0.0059
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -5.1500
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 1
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 4: [6 3 6 5]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -9.5090
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -0.1640
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -1.8890
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 1
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Prediction complete: 112 samples predicted
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Prediction distribution:
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   Class 0: 42 predictions
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   Class 1: 36 predictions
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   Class 2: 34 predictions
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Accuracy: 97.32%
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - PREDICTION PHASE
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Predicting 38 samples
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+--- Sample Predictions ---
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 0: [7 5 6 5]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -5.4292
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -0.8027
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -0.6024
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 2
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 1: [5 5 7 9]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -7.2281
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -5.9158
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -0.0034
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 2
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 2: [2 7 1 0]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -0.0003
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -9.1999
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -8.7944
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 0
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 3: [7 4 7 8]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -5.8448
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -5.6719
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -0.0064
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 2
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Sample 4: [4 4 5 5]
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -8.1491
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -0.0107
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -4.5750
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   -> Predicted class: 1
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - 
+Prediction complete: 38 samples predicted
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Prediction distribution:
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   Class 0: 8 predictions
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   Class 1: 15 predictions
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO -   Class 2: 15 predictions
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - GENERATING HISTOGRAM VISUALIZATIONS
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:02 - naive_bayes_sklearn - INFO - Plotting feature histograms...
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - Plotting class priors...
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - Histogram visualizations complete
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - Plots saved to output/
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - PREDICTION PHASE
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - ============================================================
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - Predicting 112 samples
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - 
+--- Sample Predictions ---
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - 
+Sample 0: [5 3 6 4]
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -8.6300
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -0.2013
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -1.7031
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   -> Predicted class: 1
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - 
+Sample 1: [3 7 1 0]
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -0.0011
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -7.2235
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -7.9967
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   -> Predicted class: 0
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - 
+Sample 2: [9 2 9 9]
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -8.9231
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -6.3299
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -0.0019
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   -> Predicted class: 2
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - 
+Sample 3: [4 3 5 5]
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -9.9768
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -0.0059
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -5.1500
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   -> Predicted class: 1
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - 
+Sample 4: [6 3 6 5]
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=0|features) = -9.5090
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=1|features) = -0.1640
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   log P(class=2|features) = -1.8890
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   -> Predicted class: 1
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - 
+Prediction complete: 112 samples predicted
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO - Prediction distribution:
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   Class 0: 42 predictions
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   Class 1: 36 predictions
+2025-11-29 02:47:03 - naive_bayes_sklearn - INFO -   Class 2: 34 predictions

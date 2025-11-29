@@ -20,8 +20,6 @@ ENV/
 .DS_Store
 
 # Project specific
-output/*.log
-output/*.png
 *.egg-info/
 dist/
 build/
